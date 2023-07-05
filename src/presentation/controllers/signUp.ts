@@ -1,18 +1,16 @@
+import { MissingParamError } from "../error/missing-error";
+import { badRequest, internalServerError } from "../helpers/helper";
 import { HttpResponse, HttpRequest } from "../protocols/http";
 
 export class SignUpController {
   handle(httpRequest: HttpRequest): HttpResponse {
-    if (!httpRequest.body.name) {
-      return {
-        statusCode: 400,
-        body: new Error("missing param: name"),
-      };
+    const requiredField = ["name", "email"];
+
+    for (const field of requiredField) {
+      if (!httpRequest.body[field]) {
+        return badRequest(new MissingParamError(field));
+      }
     }
-    if (!httpRequest.body.email) {
-      return {
-        statusCode: 400,
-        body: new Error("missing param: email"),
-      };
-    }
+    return internalServerError(new Error("Internal server error"));
   }
 }
