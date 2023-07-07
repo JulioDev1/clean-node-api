@@ -1,6 +1,5 @@
 import { InvalidParamError } from "../error/invalid-param-error";
 import { MissingParamError } from "../error/missing-error";
-import { ServerError } from "../error/server-error";
 import { badRequest, internalServerError } from "../helpers/helper";
 import { Controller } from "../protocols/controller";
 import { EmailValidator } from "../protocols/email-validtor";
@@ -34,12 +33,9 @@ export class SignUpController implements Controller {
         return badRequest(new InvalidParamError("email"));
       }
 
-      return internalServerError(new Error("Internal server error"));
+      return internalServerError();
     } catch (erro) {
-      return {
-        statusCode: 500,
-        body: new ServerError(),
-      };
+      return internalServerError();
     }
   }
 }
