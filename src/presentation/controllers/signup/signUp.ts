@@ -1,5 +1,5 @@
 import { MissingParamError, InvalidParamError } from "../../error/index";
-import { badRequest, internalServerError } from "../../helpers/helper";
+import { badRequest, internalServerError, ok } from "../../helpers/helper";
 import {
   HttpResponse,
   HttpRequest,
@@ -47,7 +47,7 @@ export class SignUpController implements Controller {
         email,
         password,
       });
-      return { statusCode: 200, body: account };
+      return ok(account);
     } catch (erro) {
       return internalServerError();
     }
