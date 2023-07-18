@@ -3,13 +3,14 @@ import {
   MissingParamError,
   InvalidParamError,
   ServerError,
-} from "../error/index";
-import { EmailValidator } from "../protocols/email-validtor";
+} from "../../error/index";
 import {
   AddAccount,
   AddAccountModel,
-} from "../../domain/uses-cases/add-account";
-import { AccountModel } from "../../domain/models/accountModels";
+  EmailValidator,
+  AccountModel,
+} from "./sign-protocols";
+
 const makeEmail = (): EmailValidator => {
   class EmailValidatorStub implements EmailValidator {
     isValid(email: string): boolean {

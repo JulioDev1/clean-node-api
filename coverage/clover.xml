@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1689620808668" clover="3.2.0">
-  <project timestamp="1689620808668" name="All files">
-    <metrics statements="22" coveredstatements="22" conditionals="3" coveredconditionals="3" methods="2" coveredmethods="2" elements="27" coveredelements="27" complexity="0" loc="22" ncloc="22" packages="2" files="2" classes="2"/>
-    <package name="controllers">
-      <metrics statements="19" coveredstatements="19" conditionals="3" coveredconditionals="3" methods="2" coveredmethods="2"/>
-      <file name="signUp.ts" path="C:\Users\Pichau\Documents\clean-node-api\src\presentation\controllers\signUp.ts">
+<coverage generated="1689639246361" clover="3.2.0">
+  <project timestamp="1689639246361" name="All files">
+    <metrics statements="28" coveredstatements="22" conditionals="3" coveredconditionals="3" methods="2" coveredmethods="2" elements="33" coveredelements="27" complexity="0" loc="28" ncloc="28" packages="3" files="4" classes="4"/>
+    <package name="controllers.signup">
+      <metrics statements="23" coveredstatements="19" conditionals="3" coveredconditionals="3" methods="2" coveredmethods="2"/>
+      <file name="sign-protocols.ts" path="C:\Users\Pichau\Documents\clean-node-api\src\presentation\controllers\signup\sign-protocols.ts">
+        <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+        <line num="2" count="0" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+      </file>
+      <file name="signUp.ts" path="C:\Users\Pichau\Documents\clean-node-api\src\presentation\controllers\signup\signUp.ts">
         <metrics statements="19" coveredstatements="19" conditionals="3" coveredconditionals="3" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
-        <line num="3" count="1" type="stmt"/>
         <line num="11" count="1" type="stmt"/>
         <line num="16" count="9" type="stmt"/>
         <line num="17" count="9" type="stmt"/>
@@ -34,6 +41,14 @@
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="protocols">
+      <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.ts" path="C:\Users\Pichau\Documents\clean-node-api\src\presentation\protocols\index.ts">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+        <line num="2" count="0" type="stmt"/>
       </file>
     </package>
   </project>
