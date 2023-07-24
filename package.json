@@ -13,8 +13,10 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
     "@types/jest": "^29.5.2",
     "@types/node": "^20.3.2",
+    "@types/validator": "^13.7.17",
     "@typescript-eslint/eslint-plugin": "^5.60.1",
     "eslint": "^8.43.0",
     "eslint-config-standard-with-typescript": "^36.0.0",
@@ -31,7 +33,7 @@
     "typescript-eslint": "^0.0.1-alpha.0"
   },
   "dependencies": {
-    "@types/validator": "^13.7.17",
+    "bcrypt": "^5.1.0",
     "validator": "^13.9.0"
   }
 }
